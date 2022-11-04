@@ -80,6 +80,38 @@
 }
 
 
+#producto-contenedor {
+  margin:1rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-right: 10%;
+  padding-left: 10%;
+  background: #424242;
+
+}
+  
+  .card .card-image .card-title {
+    color: rgb(225, 76, 65);
+    position: unset;
+    height: auto;
+  }
+  .card {
+    margin: 0.5rem;
+
+}
+
+.card-title {
+    font-size: 0.5rem;
+}
+.card-text {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+}
+
+
+
 
 
 .modal-carrito{
@@ -118,17 +150,7 @@
 
 
 }
-#producto-contenedor {
-  display: grid;
-  gap: 1rem;
- 
-  max-width: 60rem;
-  margin: 60px auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: #424242;
-}
+
 
 .productoEnCarrito {
   border-left: 5px solid rgb(231, 171, 171);
@@ -171,10 +193,7 @@
 
 
 
-.card .card-image .card-title {
-  color: #0d47a1;
-  position: unset
-}
+
 
 
 
@@ -196,12 +215,7 @@
 
 
 
-.card {
-  max-width: 30%;
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: rgb(255, 255, 255) 0px 5px 15px 0px;
-}
+
 
 .modal-contenedor {
   position: fixed;
