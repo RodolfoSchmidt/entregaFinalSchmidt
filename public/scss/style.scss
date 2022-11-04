@@ -14,13 +14,14 @@
   }
   .carritoybuscar{
     display:flex;
-    padding: 10px;
+    padding: 5%;
     justify-content: space-between;
     ::placeholder{color:#424242};
     align-items: flex-end;
   
    input[value="buscar"]{
-      width: 90%;
+
+      width: 200%;
       height: 80%;
       background:rgb(255, 255, 255);
           
@@ -57,6 +58,26 @@
   }
 }
 
+.container-fluid{
+  display: flex;
+  z-index: 99;
+
+  .navbar-brand{
+    color: rgb(255, 255, 255);
+    padding-left: 5%;
+  }
+  button{
+    button:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: none;
+    }
+  }
+  .nav-link, .nav-link.active{
+    color: rgb(255, 255, 255);
+  }
+  
+}
 
 
 

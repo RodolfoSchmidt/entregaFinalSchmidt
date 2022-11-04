@@ -12,13 +12,13 @@
     width: 100%; }
   .header .carritoybuscar {
     display: flex;
-    padding: 10px;
+    padding: 5%;
     justify-content: space-between;
     align-items: flex-end; }
     .header .carritoybuscar ::placeholder {
       color: #424242; }
     .header .carritoybuscar input[value="buscar"] {
-      width: 90%;
+      width: 200%;
       height: 80%;
       background: white; }
     .header .carritoybuscar button[value="buscar"] {
@@ -38,6 +38,19 @@
     .header .carritoybuscar #cesta-carrito:focus {
       outline: none;
       background: none; }
+
+.container-fluid {
+  display: flex;
+  z-index: 99; }
+  .container-fluid .navbar-brand {
+    color: white;
+    padding-left: 5%; }
+  .container-fluid button button:hover {
+    cursor: pointer;
+    color: white;
+    background: none; }
+  .container-fluid .nav-link, .container-fluid .nav-link.active {
+    color: white; }
 
 .modal-carrito h3 {
   color: white;
