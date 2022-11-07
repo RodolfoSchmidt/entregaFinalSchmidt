@@ -32,6 +32,13 @@ contactForm.addEventListener('submit',(e)=>{
         }
     };
 
-    sendEmail(body);
-
+    sendEmail(body)
+        swal({
+            title: "Tu mensaje fue enviado",
+            text: "Nos comunicaremos con vos",
+            icon: "success",
+        });
+        
+        
 })
+
