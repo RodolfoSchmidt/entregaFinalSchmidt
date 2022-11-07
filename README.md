@@ -15,4 +15,6 @@ En la página de "contacto", usted podrá enviar un email al comerciante, aquí 
 
 Así también puede ir a la página "Buscar" dónde sorprendentemente nos encontramos con un buscador de Pokemones que se logra consumiendo la PokeApi... (si, me encuentro trabajando para que el buscador sea de cartas Magic)
 
+La página se encuentra hosteada aquí en GitHub Pages  https://rodolfoschmidt.github.io/entregaFinalSchmidt/ 
 Gracias por su tiempo!!!
+
