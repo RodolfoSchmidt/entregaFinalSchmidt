@@ -19,40 +19,41 @@
     <title>Mundo Magic</title>
 </head>
 <body>
+  <nav class="navbar navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand"  href="index.html">Mundo Magic</a>
+      <button class="navbar-toggler bg-danger" id="buttonHambur" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-danger"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link"  href="./html/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"href="./html/novedades.html">Novedades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./html/contacto.html">Contacto</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
     <header class="header">
-        <img class="imghead" src="./public/img/Captura.PNG" alt="img background head">
+        <img class="imghead" src="./public/img/head.png" alt="img background head">
         <div class="carritoybuscar">
           <form class="d-flex" role="search" id="buscarProducto">
             <input class="form-control me-3" type="search" value="buscar"  placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-black" type="submit" value="buscar" >Buscar</button>
+            <button class="btn btn-outline-danger" type="submit" value="buscar" >Buscar</button>
           </form>
           <button id="cesta-carrito"><i class="fas fa-shopping-cart"><span id="contador-carrito">0</span></i></button>
         </div>
       </header>
     
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand"  href="index.html">Mundo Magic</a>
-          <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon bg-danger"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./html/productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"href="./html/novedades.html">Novedades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./html/contacto.html">Contacto</a>
-              </li>
-              
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
+    
     <main class="containter-main" id="producto-contenedor">
 
     </main>
@@ -69,7 +70,7 @@
     </div>
     <footer class="text-center text-white" >
         <!-- Grid container -->
-        <div class="container pt-4">
+        <div class="container pt-4" >
           <!-- Section: Social media -->
           <section class="mb-4">
             <!-- Facebook -->

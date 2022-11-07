@@ -6,7 +6,7 @@ const obtenerProductos = async() =>{
         return data;
 
     } catch (error) {
-        console.log('error error aaaaa: ' , error);
+        console.log('error : ' , error);
     };
     
 };

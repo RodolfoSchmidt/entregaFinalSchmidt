@@ -4,7 +4,6 @@ const btn = document.getElementById('btn-compra');
 btn.addEventListener('click', () => {
     swal({
         title: "esta seguro que quiere realizar la compra?",
-        text: "usted esta comprando: ",
         icon: "warning",
         buttons: true,
         dangerMode: true,
@@ -12,11 +11,11 @@ btn.addEventListener('click', () => {
       .then((willDelete) => {
         if (willDelete) {
           swal("perfecto. estamos procesando su pedido", {
-            icon: "success",
+            icon: "warning",
             
           });
         } else {
-          swal("Your imaginary file is safe!");
+          swal("Guardaremos tu producto en el carrito");
         }
       })});
 

@@ -6,103 +6,85 @@
   font-family: 'Silkscreen', cursive;
   background-color: #202020; }
 
+.navbar {
+  background-color: #424242;
+  margin: 0;
+  padding: 0; }
+
+.container-fluid {
+  display: flex;
+  border-bottom: #780A06 2px solid; }
+  .container-fluid a {
+    color: #E3E0CF; }
+
+.navbar-brand {
+  color: #E3E0CF;
+  margin: 1rem; }
+
+#buttonHambur:hover {
+  color: #E3E0CF;
+  background: none; }
+
+.nav-link, .nav-link.active {
+  color: #E3E0CF; }
+
 .header {
   background-color: #424242; }
   .header .imghead {
-    width: 100%; }
+    width: 100%;
+    border-bottom: #780A06 2px solid; }
   .header .carritoybuscar {
     display: flex;
     padding: 5%;
     justify-content: space-between;
-    align-items: flex-end; }
+    align-items: flex-end;
+    border-bottom: #780A06 2px solid; }
     .header .carritoybuscar ::placeholder {
       color: #424242; }
     .header .carritoybuscar input[value="buscar"] {
       width: 200%;
       height: 80%;
-      background: white; }
+      background: #E3E0CF; }
     .header .carritoybuscar button[value="buscar"] {
-      color: white;
-      box-shadow: 2px 2px 2px 1px white; }
+      color: #E3E0CF; }
     .header .carritoybuscar #cesta-carrito {
       border: none;
-      color: white;
+      color: #E3E0CF;
       font-size: 30px;
       border-radius: 10%;
       padding: 10px 20px;
       transition: all .3s; }
     .header .carritoybuscar #cesta-carrito:hover {
       cursor: pointer;
-      color: #e14c41;
+      color: #780A06;
       background: none; }
     .header .carritoybuscar #cesta-carrito:focus {
       outline: none;
       background: none; }
 
-.container-fluid {
-  display: flex;
-  z-index: 99; }
-  .container-fluid .navbar-brand {
-    color: white;
-    padding-left: 5%; }
-  .container-fluid button button:hover {
-    cursor: pointer;
-    color: white;
-    background: none; }
-  .container-fluid .nav-link, .container-fluid .nav-link.active {
-    color: white; }
-
-#producto-contenedor {
-  margin: 1rem auto;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding-right: 10%;
-  padding-left: 10%;
-  background: #424242; }
-
-.card .card-image .card-title {
-  color: #e14c41;
-  position: unset;
-  height: auto; }
-
-.card {
-  margin: 0.5rem; }
-
-.card-title {
-  font-size: 0.5rem; }
-
-.card-text {
-  font-weight: 600;
-  font-size: 1.3rem;
-  color: white; }
-
 .modal-carrito h3 {
-  color: white;
+  color: #E3E0CF;
   display: flex;
   justify-content: center;
   background: #424242; }
 
 .modal-carrito p {
-  color: white; }
+  color: #E3E0CF; }
 
 .modal-carrito #btn-cerrar-carrito {
   position: absolute;
   top: 15px;
   right: 15px;
   font-size: 20px;
-  color: #e14c41; }
-  .modal-carrito #btn-cerrar-carrito i:focus {
-    outline: none;
-    background: none; }
+  color: #780A06; }
 
 #btn-compra {
   color: #202020;
-  background: #e14c41;
+  background: #780A06;
   font-size: large;
   width: 8rem; }
   #btn-compra i {
-    background: #e14c41; }
+    background: #780A06; }
 
 .productoEnCarrito {
   border-left: 5px solid #e7abab;
@@ -112,13 +94,9 @@
   padding: 5px 10px;
   display: flex;
   justify-content: space-between;
-  color: #e14c41; }
+  color: #780A06; }
   .productoEnCarrito button {
-    background: #e14c41; }
-    .productoEnCarrito button .boton-eliminar:hover {
-      cursor: pointer; }
-    .productoEnCarrito button .boton-eliminar:focus {
-      outline: none; }
+    background: #780A06; }
 
 .modal-carrito #btn-cerrar-carrito:hover {
   cursor: pointer; }
@@ -128,16 +106,6 @@
 
 .modal-carrito .producto-precio {
   padding-top: 10px; }
-
-.productoEnCarrito:hover {
-  border-left: 5px solid #e14c41; }
-
-.swal-modal {
-  background: #424242; }
-  .swal-modal .swal-title {
-    color: aliceblue; }
-  .swal-modal .swal-text {
-    color: aliceblue; }
 
 .modal-contenedor {
   position: fixed;
@@ -150,7 +118,7 @@
   transition: all .5s;
   opacity: 0;
   visibility: hidden;
-  background-color: rgba(36, 35, 35, 0.3); }
+  background-color: rgba(42, 42, 42, 0.3); }
 
 .modal-active {
   opacity: 1;
@@ -165,7 +133,65 @@
   margin-top: -100%;
   transition: all .5s;
   border-radius: 10px;
-  box-shadow: white 0px 5px 15px 0px; }
+  box-shadow: #780a06 0px 5px 15px 0px; }
 
 .modal-active .modal-carrito {
   margin-top: 0; }
+
+.swal-modal {
+  background: #424242;
+  box-shadow: #780a06 0px 5px 15px 0px; }
+  .swal-modal .swal-title {
+    color: #E3E0CF;
+    background: #424242; }
+  .swal-modal .swal-text {
+    color: #E3E0CF;
+    background: #424242; }
+  .swal-modal button {
+    color: #780A06;
+    background: #E3E0CF; }
+
+.card {
+  background: #E3E0CF;
+  margin: 1rem; }
+
+.card-title {
+  width: 100%; }
+
+#producto-contenedor {
+  color: #E3E0CF;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #202020;
+  border-bottom: #780A06 2px solid; }
+
+.containerform .formform {
+  margin-top: 15rem;
+  background: #343534;
+  display: flex;
+  flex-direction: column;
+  padding: 7vw 4vw;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 10px; }
+  .containerform .formform h3 {
+    color: #E3E0CF;
+    font-weight: 800;
+    margin-bottom: 2rem; }
+  .containerform .formform input, .containerform .formform textarea {
+    border: 0;
+    margin: 1rem 0;
+    padding: 2rem;
+    outline: none;
+    background: #E3E0CF; }
+  .containerform .formform button {
+    padding: 1rem;
+    background: #181818;
+    color: #E3E0CF;
+    font-size: large;
+    border: 2;
+    outline: none;
+    cursor: pointer;
+    margin: 2rem auto 0;
+    border-radius: 30px; }
