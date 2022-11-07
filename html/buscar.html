@@ -56,17 +56,26 @@
         </div>
       </header>
       <main>
-        <div class="containerform">
-            <form class="formform" id="contact_form">
-                <h3>Comunicate conmigo</h3>
-                <input type="text" id="name" placeholder="Ingresa tu nombre" required>
-                <input type="email" id="email" placeholder="Ingresa tu email" required>
-                <input type="text" id="phone" placeholder="Ingresa tu núm telefónico" required>
-                <textarea  id="message" rows="4" placeholder="¿En que puedo ayudarte?" required></textarea>
-                <button type="submit" id="enviarMensaje"> Enviar </button>
-            </form>
-    
-           </div>
+      <div class="infoBuscar">
+        <div>
+          <h2 class="tittleBuscar">
+            Buscador de pokemon dentro de magic.
+          </h2>
+        </div>
+        <div class="pBuscar">
+          <p>Página en construcción, próximamente podrás buscar tus cartas magic</p>
+        <p>
+          Por ahora diviertete buscando tu pokemon favorito a través de su número
+        </p>
+        </div>
+        
+      </div>      
+      <div class="contenedor">
+          <input type="text" id="caja" placeholder="Ingrese Un Numero">
+          <button class="text-white btn bg-danger" id="button">Buscar</button>
+          <img src="" id="img" class="pokemon" alt="">
+          <p id="info" class="text-white"></p>
+      </div>
       </main>
       <div class="modal-contenedor">
         <div class="modal-carrito">
@@ -164,6 +173,7 @@
       <script src="../src/obtenerProductos.js" type="module"></script>
       <script src="../src/comprar.js"></script>
       <script src="../src/contact.js"></script>
+      <script src="../src/buscar.js"></script>
       <!-- <script src="./src/newpage.js"></script> -->
       <script src="../App.js" type="module"></script>
       <script src="../index.js" type="module"></script>
