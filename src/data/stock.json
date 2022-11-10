@@ -46,11 +46,14 @@
     },
     {
       "id": 6,
-      "nombre": "Oath Of Scholars",
-      "tipo": "Enchantment",
-      "edition": "Exodus",
-      "precio": 225,
-      "img": "./public/img/oathOfScholars.png",
+      "nombre": "Contagion Clasp",
+      "tipo": "Artifact",
+      "edition": "Spiral Time",
+      "precio": 520,
+      "img": "./public/img/contagionClasp.png",
       "cantidad": 125
     }
+  
+    
+
   ]

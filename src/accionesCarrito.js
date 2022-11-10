@@ -2,14 +2,14 @@ import { actualizarTotalesCarrito } from './actualizarCarrito.js';
 import { productos } from './stock.js';
 import { obtenerCarritoStorage } from './storage.js';
 
-
+//Array vacio del carrito de compras para iterar y con las acciones.
 let carrito = [];
 
+//Función con la utilidad de validar la existencia del producto en el array, de ser así sumar +1 sino crear.
 const validarProductoRepetido = (productoId) => {
 
-    if (localStorage.getItem('carrito')) {
-        carrito = obtenerCarritoStorage();
-    }
+    localStorage.getItem('carrito') ? carrito = obtenerCarritoStorage() : console.log('el carrito no existe');
+    
 
     const productoRepetido = carrito.find(producto => producto.id === productoId);
 
@@ -22,7 +22,7 @@ const validarProductoRepetido = (productoId) => {
         agregarAlCarrito(productoId);
     }
 };
-
+// función que agrega el producto al carrito. y envía mensaje a través de la librería Toastyfy
 const agregarAlCarrito = (productoId) => {
     const contenedor = document.getElementById('carrito-contenedor');
     const producto = productos.find(producto => producto.id === productoId);
@@ -37,6 +37,13 @@ const agregarAlCarrito = (productoId) => {
                     `;
     contenedor.appendChild(div);
     actualizarTotalesCarrito(carrito);
+    Toastify({
+        text:"se agregó el producto al carrito",
+        offset:{
+            x: 25,
+            y: 25,
+        },
+    }).showToast();
 };
 
 // pintarCarrito recibe por parámetro un array de objetos
@@ -56,7 +63,7 @@ const pintarCarrito = (carrito) => {
         contenedor.appendChild(div);
     });
 };
-
+//Función que elimina el producto del carrito
 const eliminarProductoCarrito = (productoId) => {
     const carritoStorage = obtenerCarritoStorage();
     const carritoActualizado = carritoStorage.filter(producto => producto.id != productoId);

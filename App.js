@@ -2,6 +2,7 @@
 import { validarProductoRepetido } from "./src/accionesCarrito.js";
 import { obtenerProductos } from "./src/obtenerProductos.js";
 
+//Muestra los productos en pantalla.
 const mostrarProductos = async () => {
   const contenedorProductos = document.getElementById("producto-contenedor");
 
