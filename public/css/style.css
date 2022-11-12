@@ -78,13 +78,23 @@
   font-size: 20px;
   color: #780A06; }
 
-#btn-compra {
-  color: #202020;
-  background: #780A06;
-  font-size: large;
-  width: 8rem; }
-  #btn-compra i {
-    background: #780A06; }
+.botonesCarrito {
+  display: flex;
+  justify-content: space-around; }
+  .botonesCarrito #btn-compra {
+    color: #E3E0CF;
+    background: #061778;
+    font-size: large;
+    width: 7rem; }
+    .botonesCarrito #btn-compra i {
+      background: #061778; }
+  .botonesCarrito #btn-vaciar {
+    color: #E3E0CF;
+    background: #780A06;
+    font-size: large;
+    width: 7rem; }
+    .botonesCarrito #btn-vaciar i {
+      background: #780A06; }
 
 .productoEnCarrito {
   border-left: 5px solid #e7abab;

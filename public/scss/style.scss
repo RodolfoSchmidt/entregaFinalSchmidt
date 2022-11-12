@@ -106,17 +106,36 @@
   }
 
 }
-#btn-compra{
-  color: rgb(32, 32, 32);
-  background: #780A06;
-  font-size: large;
-  width: 8rem;
-  i{
-    background: #780A06;
+.botonesCarrito{
+  display: flex;
+  justify-content: space-around;
+
+
+  #btn-compra{
+    color:#E3E0CF;
+    background:#061778;
+    font-size: large;
+    width: 7rem;
+    i{
+      background: #061778;
+    }
+  
+  
   }
-
-
+  #btn-vaciar{
+    color:#E3E0CF;
+    background: #780A06;
+    font-size: large;
+    width: 7rem;
+    i{
+      background: #780A06;
+    }
+  
+  
+  }
 }
+
+
 .productoEnCarrito {
   border-left: 5px solid rgb(231, 171, 171);
   border-bottom-left-radius: 3px;
