@@ -110,11 +110,8 @@ botonComprar.addEventListener('click', () => {
 
                 )
                 compra(carrito)
-<<<<<<< HEAD
                 
-=======
                
->>>>>>> main
             }
         })
     }
