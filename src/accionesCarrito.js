@@ -110,7 +110,7 @@ botonComprar.addEventListener('click', () => {
 
                 )
                 compra(carrito)
-                location.href = "../index.html"
+                
             }
         })
     }
