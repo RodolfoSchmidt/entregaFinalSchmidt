@@ -2,6 +2,7 @@ import { actualizarTotalesCarrito } from './actualizarCarrito.js';
 import { productos } from './stock.js';
 import { obtenerCarritoStorage } from './storage.js';
 
+
 //Array vacio del carrito de compras para iterar y con las acciones.
 let carrito = [];
 
@@ -70,50 +71,130 @@ const eliminarProductoCarrito = (productoId) => {
 
     actualizarTotalesCarrito(carritoActualizado);
     pintarCarrito(carritoActualizado);
+    Toastify({
+
+      text: "Producto Eliminado",
+      
+      duration: 1000,
+      stopOnFocus: false,
+      
+      }).showToast();
 };
 
 //boton de compra final
-const btnCompra = document.getElementById('btn-compra');
-btnCompra.addEventListener('click', () => {
-    swal({
-        title: "esta seguro que quiere realizar la compra?",
-        icon: "warning",
-        buttons: true,
-        dangerMode: true,
-      })
-      .then((willDelete) => {
-        if (willDelete) {
-          swal("perfecto. estamos procesando su pedido", {
-            icon: "warning",
-            
-          })
-          ;
-        } else {
-          swal("Guardaremos tu producto en el carrito");
-        }
-      })});
+const botonComprar = document.getElementById('btn-compra');
 
+botonComprar.addEventListener('click', () => {
+
+
+    const carrito = obtenerCarritoStorage()
+
+    const alerta1 = () => {
+        Swal.fire({
+            title: '¿Estás seguro de quieres eliminar todos los productos de tu carrito?',
+            text: "",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'cancelar',
+            confirmButtonText: 'Estoy seguro'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Productos eliminados!',
+                    'El carrito se vacio correctamente',
+                    'success'
+                    
+                    
+
+                )
+                compra(carrito)
+                location.href = "../index.html"
+            }
+        })
+    }
+    const alerta2= () => {
+        Swal.fire({
+            title: 'Carrito Vacio!',
+            text: "Tu carrito de compras esta vacio!",
+            icon: 'warning',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'Ok'
+        })
+        
+    }
+    carrito.length >= 1 ? alerta1() : alerta2()
+    
+})
+
+const compra = (carrito) => {
+
+    while (carrito.length > 0) {
+        carrito.pop()
+    }
+
+    actualizarTotalesCarrito(carrito)
+    pintarCarrito(carrito)
+}
 //botón de vaciar carrito
 
-const btnVaciar = document.getElementById('btn-vaciar');
-btnVaciar.addEventListener('click', () => {
-    swal({
-        title: "esta seguro que quiere eliminar todos los productos?",
-        icon: "warning",
-        buttons: true,
-        dangerMode: true,
-      })
-      .then((willDelete) => {
-        if (willDelete) {
-          swal("vaciamos tu carrito", {
-            icon: "warning",
-            
-          })
-          ;
-        }
-      })});
+
+const botonVaciar = document.getElementById('btn-vaciar');
+
+botonVaciar.addEventListener('click', () => {
+
+
+    const carrito = obtenerCarritoStorage()
+
+    const alerta1 = () => {
+        Swal.fire({
+            title: '¿Estás seguro de quieres eliminar todos los productos de tu carrito?',
+            text: "",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'cancelar',
+            confirmButtonText: 'Estoy seguro'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Productos eliminados!',
+                    'El carrito se vacio correctamente',
+                    'success'
+                    
+
+                )
+                vaciar(carrito)
+            }
+        })
+    }
+    const alerta2= () => {
+        Swal.fire({
+            title: 'Carrito Vacio!',
+            text: "Tu carrito de compras esta vacio!",
+            icon: 'warning',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'Ok'
+        })
+    }
+    carrito.length >= 1 ? alerta1() : alerta2()
+    
+})
+
+const vaciar = (carrito) => {
+
+    while (carrito.length > 0) {
+        carrito.pop()
+    }
+
+    actualizarTotalesCarrito(carrito)
+    pintarCarrito(carrito)
+}
 
 
 
 
-export { agregarAlCarrito, validarProductoRepetido, pintarCarrito, eliminarProductoCarrito, btnCompra, btnVaciar};
+
+export { agregarAlCarrito, validarProductoRepetido, pintarCarrito, eliminarProductoCarrito, };

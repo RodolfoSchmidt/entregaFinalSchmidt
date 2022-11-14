@@ -29,13 +29,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li class="nav-item">
-            <a class="nav-link"  href="contacto.html">Productos</a>
+            <a class="nav-link"  href="../index.html">Productos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link"  href="buscar.html">Buscar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"href="contacto.html">Novedades</a>
+            <a class="nav-link"href="../index.htmlhtml">Novedades</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -80,13 +80,17 @@
       </main>
       <div class="modal-contenedor">
         <div class="modal-carrito">
-          <h3>comunicate con nosotros</h3>
+          <h3>Carrito</h3>
           <button id="btn-cerrar-carrito"><i class="fas fa-times-circle"></i></button>
           <div id="carrito-contenedor">
     
           </div>
           <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
-          <button id="btn-compra"><i class="fas fa-time-circle"> Comprar </button>
+          <div class="botonesCarrito">
+            <button id="btn-compra"><i class="fas fa-time-circle"> Comprar </button>
+            <button id="btn-vaciar"><i class="fas fa-time-circle"> vaciar carrito </button>
+          </div>
+          
         </div>
       </div>
       
@@ -175,7 +179,8 @@
       <script src="../src/comprar.js"></script>
       <script src="../src/contact.js"></script>
       <script src="../src/buscar.js"></script>
-      <!-- <script src="./src/newpage.js"></script> -->
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script src="../App.js" type="module"></script>
       <script src="../index.js" type="module"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>

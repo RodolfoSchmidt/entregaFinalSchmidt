@@ -148,16 +148,16 @@
 .modal-active .modal-carrito {
   margin-top: 0; }
 
-.swal-modal {
+.swal2-modal {
   background: #424242;
   box-shadow: #780a06 0px 5px 15px 0px; }
-  .swal-modal .swal-title {
+  .swal2-modal .swal2-title {
     color: #E3E0CF;
     background: #424242; }
-  .swal-modal .swal-text {
+  .swal2-modal .swal2-text {
     color: #E3E0CF;
     background: #424242; }
-  .swal-modal button {
+  .swal2-modal button {
     color: #780A06;
     background: #E3E0CF; }
 
