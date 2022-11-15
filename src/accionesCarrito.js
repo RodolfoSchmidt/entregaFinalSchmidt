@@ -91,7 +91,7 @@ botonComprar.addEventListener('click', () => {
 
     const alerta1 = () => {
         Swal.fire({
-            title: '¿Estás seguro de quieres eliminar todos los productos de tu carrito?',
+            title: '¿Estás seguro de quieres comprar éstos productos?',
             text: "",
             icon: 'warning',
             showCancelButton: true,
@@ -102,8 +102,8 @@ botonComprar.addEventListener('click', () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 Swal.fire(
-                    'Productos eliminados!',
-                    'El carrito se vacio correctamente',
+                    'ya procesamos tu compra!',
+                    'te enviaremos un email de confirmación!',
                     'success'
                     
                     
